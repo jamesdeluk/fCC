@@ -1,0 +1,12 @@
+body {
+	background: lightblue;
+}
+
+.col-8 {
+	background: rgba(255,255,255,0.9);
+	padding: 0px 40px;
+}
+
+.jumbotron {
+	background: #e2faff;
+}
