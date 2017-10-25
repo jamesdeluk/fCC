@@ -1,12 +1,30 @@
 function mutation(arr) {
-  var word1 = arr[0].toLowerCase();
-  var word2 = arr[1].toLowerCase();
-  for (var i = 0; i < word2.length; i++){
-    if(word2.indexOf(word1[i]) === -1){
-      return false;
+  var count = 0;
+  for (var i = 0; i < arr.length; i++) {
+    arr[i] = arr[i].toLowerCase();
+  }
+
+  var word = arr[0].split("");
+  var letters = arr[1].split("");
+  
+  var wordWithoutDupes = word.filter(function(el, index, array) {
+    return array.indexOf(el) == index;
+  });
+
+  for (var i = 0; i < letters.length; i++) {
+    for (var j = 0; j < wordWithoutDupes.length; j++) {
+      if (letters[i] == wordWithoutDupes[j]) {
+        count++;
+      }
     }
   }
-  return true;
+  
+  if (count==letters.length) {
+    return true;
+  } else {
+    return false;
+  }
+  
 }
 
 // mutation(["hello", "hey"]);

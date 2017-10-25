@@ -1,10 +1,12 @@
 function convertToRoman(num) {
- if (num >= 4000) {
-   return;
- }
+  if (num >= 4000) {
+    return;
+  }
  
   var arrNum = num.toString(10).split("").map(Number);
   var arrRom = [];
+
+  //pattern a aa aaa ab b ba baa baaa ac
   
   if (arrNum[arrNum.length-1] == 1) {arrRom.push("I");}
   if (arrNum[arrNum.length-1] == 2) {arrRom.push("II");}
@@ -44,8 +46,6 @@ function convertToRoman(num) {
 
  return arrRom;
 }
-
-// unshift to first, push to last
 
 /*convertToRoman(2) //should return "II".
 convertToRoman(3) should return "III".

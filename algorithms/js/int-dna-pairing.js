@@ -3,13 +3,13 @@ function pairElement(str) {
   var arrFixed = [];
   for (var i = 0; i < arr.length; i++) {
     if (arr[i] === "G") {
-    arrFixed.push(["G", "C"]);
+      arrFixed.push(["G", "C"]);
     } else if (arr[i] === "C") {
-    arrFixed.push(["C", "G"]);
+      arrFixed.push(["C", "G"]);
     } else if (arr[i] === "A") {
-    arrFixed.push(["A", "T"]);
+      arrFixed.push(["A", "T"]);
     } else if (arr[i] === "T") {
-    arrFixed.push(["T", "A"]);
+      arrFixed.push(["T", "A"]);
     }
   }
   return arrFixed;
