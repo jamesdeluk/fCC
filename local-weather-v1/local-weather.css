@@ -1,0 +1,16 @@
+#info {
+	font-size: 2em;
+}
+
+#image {
+	font-size: 4em;
+}
+
+.clear {
+	background-color: skyblue;
+}
+
+.jg-container {
+	background-color: rgba(255,255,255,0.5);
+	padding-top: 40vh;
+}

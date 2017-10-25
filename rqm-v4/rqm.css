@@ -1,0 +1,48 @@
+body {
+	padding-top: 20vh;
+	background: #56ab2f;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to right, #a8e063, #56ab2f);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to right, #a8e063, #56ab2f); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	font-family: 'Allura', cursive;
+}
+
+.icon {
+	font-size: 1.5em !important;
+}
+
+#jg-main {
+	background: rgba(255,255,255,0.7);
+	padding: 10px;
+	border-radius: 10px;
+}
+
+#jg-quote-box {
+}
+
+#jg-quote-span {
+	font-size: 4em;
+	line-height: 1.5em;
+}
+
+#jg-author-box {
+	transition: width 2s;
+	margin: auto;
+}
+
+#jg-author-span {
+	font-size: 2em;
+	line-height: 1.5em;
+}
+
+.jg-ma {
+	margin: auto !important;
+}
+
+.jg-mb {
+	margin: 0px auto 5px auto !important;
+}
+
+.grid-container {
+	display: grid;
+	grid-template-columns: 1fr 4fr 1fr;
+}

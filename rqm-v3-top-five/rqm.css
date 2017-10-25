@@ -1,0 +1,39 @@
+body {
+	padding-top: 20vh;
+	background: #56ab2f;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to right, #a8e063, #56ab2f);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to right, #a8e063, #56ab2f); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+#quotes:nth-child(odd) {
+	background: red !important;
+}
+
+#jg-main {
+	background: rgba(255,255,255,0.7);
+}
+
+.jg-ma {
+	margin: auto !important;
+	/*transition: width 2s;*/
+}
+
+.jg-mb {
+	margin: 0px auto 5px auto !important;
+	/*transition: width 2s;*/
+}
+
+.ui.jg-1-5em {
+	font-size: 1.5em;
+	line-height: 1.5em;
+}
+
+.ui.jg-1-3em {
+	font-size: 1.3em;
+	line-height: 1.3em;
+}
+
+.grid-container {
+	display: grid;
+	grid-template-columns: 1fr 4fr 1fr;
+}

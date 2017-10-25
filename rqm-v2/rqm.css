@@ -1,0 +1,57 @@
+body {
+	/*margin:	100px auto;*/
+	padding-top: 20vh;
+	background: #56ab2f;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to right, #a8e063, #56ab2f);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to right, #a8e063, #56ab2f); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  /*box-sizing: border-box;*/
+}
+
+.jg-bg {
+	background: rgba(255,255,255,0.7) !important;
+	/*border-radius: 5%;*/
+}
+
+.jg-ma {
+	margin: auto !important;
+	/*padding: 5% !important;*/
+}
+
+.jg-2em {
+	font-size: 2em !important;
+	line-height: 2em;
+}
+
+.jg-height {
+	min-height: 170px;
+}
+
+.jg-box {
+	/*width: 100px;*/
+	/*transition: width 1s;*/
+}
+
+.jg-box:hover {
+	/*font-size: 1em !important;*/
+}
+
+.grid-container {
+	display: grid;
+	grid-template-columns: 1fr 4fr 1fr;
+	/*margin: 0;	*/
+}
+
+/* */
+
+.jg-mb {
+	margin: 0px auto 5px auto !important;
+}
+
+.jg-mn {
+	margin: 0px;
+}
+
+
+.jg-test {
+	/*margin: 10px !important;*/
+}

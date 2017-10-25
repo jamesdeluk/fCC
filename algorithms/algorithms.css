@@ -1,0 +1,16 @@
+body {
+	background: linear-gradient(to right, #108dc7, #ef8e38);
+}
+
+.jg-main {
+	margin-top: 50px;
+	background: rgba(255,255,255,0.8);
+}
+
+.button {
+	margin: 5px !important;
+}
+
+.block {
+	display: block !important;
+}
