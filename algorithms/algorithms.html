@@ -4,47 +4,34 @@
 <html>
 <head>
 	<title>Algorithms</title>
-	<link rel="stylesheet" type="text/css" href="../../../Libraries/semantic.min.css">
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.13/semantic.min.css">
 	<link rel="stylesheet" type="text/css" href="algorithms.css">
 	<!-- <script src="../../../Libraries/jquery-3.2.1/jquery-3.2.1.min.js"></script> -->
 </head>
 <body>
 	<div class="ui container jg-main">
 	<!-- 	<div class="selector">
-			<select name="selector" id="selector">
-				<option value="rot13">caesars cipher</option>
-				<option value="repeatStringNumTimes">repeatStringNumTimes</option>
-				<option value="confirmEnding">confirmEnding</option>
-				<option value="confirmEndingIgnoreCase">confirmEndingIgnoreCase</option>
-				<option value="titleCase">titleCase</option>
-				<option value="truncateString">truncateString</option>
-			</select>
-			<button onclick="document.getElementById('output').innerText = window[document.getElementById('selector').value](document.getElementById('arg0').value, document.getElementById('arg1').value)">Submit</button>
-			<br /> </div> -->
-
+				<select name="selector" id="selector">
+					<option value="rot13">caesars cipher</option>
+				</select>
+				<button onclick="document.getElementById('output').innerText = window[document.getElementById('selector').value](document.getElementById('arg0').value, document.getElementById('arg1').value)">Submit</button>
+			</div> -->
 		<div class="ui grid">
-			<div class="row">
-				<div class="center aligned column">
-					<button class="ui blue button" data-tooltip="Enter text into arg0 to encode" data-position="bottom center" onclick="document.getElementById('output').innerText = rot13(document.getElementById('arg0').value)">caesars cipher</button>
-					<!-- <button onclick="document.getElementById('output').innerText = mutation(JSON.parse(document.getElementById('arg0').value))">mutation</button> -->
-					<!-- <button onclick="document.getElementById('output').innerText = mutationTwo(document.getElementById('arg0').value, document.getElementById('arg1').value)">mutationTwo</button> -->
-					<button class="ui blue button" data-tooltip="Enter text into arg0 and a number into arg1" data-position="bottom center" onclick="document.getElementById('output').innerText = repeatStringNumTimes(document.getElementById('arg0').value, document.getElementById('arg1').value)">repeatStringNumTimes</button>
-					<!-- <button onclick="document.getElementById('output').innerText = JSON.stringify(destroyer(JSON.parse(document.getElementById('arg0').value)))">destroyer</button> -->
-					<!-- <button onclick="document.getElementById('output').innerText = JSON.stringify(destroyerTwo(JSON.parse(document.getElementById('arg0').value)), JSON.parse(document.getElementById('arg1').value))">destroyer2</button> -->
-					<!-- <button onclick="document.getElementById('output').innerText = JSON.stringify(slasher(JSON.parse(document.getElementById('arg0').value)), JSON.parse(document.getElementById('arg1').value))">slasher</button> -->
-					<button class="ui orange button" data-tooltip="Enter text into arg0" data-position="top center" onclick="document.getElementById('output').innerText = titleCase(document.getElementById('arg0').value)">titleCase</button>
-					<button class="ui orange button" data-tooltip="Enter text into arg0 and a number in arg1" data-position="top center" onclick="document.getElementById('output').innerText = truncateString(document.getElementById('arg0').value, document.getElementById('arg1').value)">truncateString</button>
-					<!-- <button onclick="document.getElementById('output').innerText = getIndexToIns(document.getElementById('arg0').value, document.getElementById('arg1').value)">getIndexToIns</button> -->
-					<!-- <button onclick="document.getElementById('output').innerText = getIndexToInsTwo(JSON.parse(document.getElementById('arg0').value), document.getElementById('arg1').value)">getIndexToInsTwo</button> -->
-				</div>
-			</div>
 			<div class="row">
 				<div class="right aligned four wide column">
 					<button class="ui blue button" data-tooltip="Enter an array of arrays into arg0" data-position="right center" onclick="document.getElementById('output').innerText = JSON.stringify(largestOfFour(JSON.parse(document.getElementById('arg0').value)))">largestOfFour</button>
 					<button class="ui blue button" data-tooltip="Enter an array into arg0 and a number into arg1" data-position="right center" onclick="document.getElementById('output').innerText = JSON.stringify(chunkArrayInGroups(JSON.parse(document.getElementById('arg0').value), JSON.parse(document.getElementById('arg1').value)))">chunkArrayInGroups</button>
 					<button class="ui blue button" data-tooltip="Enter an array into arg0 and a number into arg1" data-position="right center" onclick="document.getElementById('output').innerText = JSON.stringify(chunkArrayInGroupsUndefineds(JSON.parse(document.getElementById('arg0').value), JSON.parse(document.getElementById('arg1').value)))">chunkArrayInGroupsUndefineds</button>
+					<button class="ui blue button" data-tooltip="Enter two numbers into arg0, or a number into arg0 then a number into arg1" data-position="right center" onclick="document.getElementById('output').innerText = addTogether(JSON.parse(document.getElementById('arg0').value), JSON.parse(document.getElementById('arg1').value))">addTogether</button> <!-- only working for separate args -->
+					<button class="ui orange button" data-tooltip="Enter an array into arg0" data-position="right center" onclick="document.getElementById('output').innerText = 'Non-false values = ' + JSON.stringify(bouncer(JSON.parse(document.getElementById('arg0').value)))">bouncer</button>
+					<button class="ui orange button" data-tooltip="Enter text in arg0 and the ending in arg1" data-position="right center" onclick="document.getElementById('output').innerText = confirmEnding(document.getElementById('arg0').value, document.getElementById('arg1').value)">confirmEnding</button>
+					<button class="ui orange button" data-tooltip="Enter text in arg0 and the ending in arg1" data-position="right center" onclick="document.getElementById('output').innerText = confirmEndingIgnoreCase(document.getElementById('arg0').value, document.getElementById('arg1').value)">confirmEndingIgnoreCase</button>
+					<button class="ui blue button" data-tooltip="Enter text into arg0 to encode" data-position="right center" onclick="document.getElementById('output').innerText = rot13(document.getElementById('arg0').value)">caesars cipher</button>
+					<button class="ui blue button" data-tooltip="Enter text into arg0 and a number into arg1" data-position="right center" onclick="document.getElementById('output').innerText = repeatStringNumTimes(document.getElementById('arg0').value, document.getElementById('arg1').value)">repeatStringNumTimes</button>
+					<button class="ui orange button" data-tooltip="Enter text into arg0" data-position="right center" onclick="document.getElementById('output').innerText = titleCase(document.getElementById('arg0').value)">titleCase</button>
+					<button class="ui orange button" data-tooltip="Enter text into arg0 and a number in arg1" data-position="right center" onclick="document.getElementById('output').innerText = truncateString(document.getElementById('arg0').value, document.getElementById('arg1').value)">truncateString</button>
 				</div>
-				<div class="eight wide column">
+				<div class="twelve wide column">
 					<div class="ui fluid huge input">
 						<input type="text" id="arg0" placeholder="arg0">
 						<input type="text" id="arg1" placeholder="arg1">
@@ -53,13 +40,10 @@
 					  <!-- <i class="code icon"></i> -->
 					  ~≈ Output ≈~
 					</h4>
-					<!-- <p>Note: If entering JSON, ""s needed around strings</p> -->
 					<p class="ui raised segment" id="output"></p>
 				</div>
 				<div class="four wide column">
-					<button class="ui orange button block" data-tooltip="Enter an array into arg0" data-position="left center" onclick="document.getElementById('output').innerText = 'Non-false values = ' + JSON.stringify(bouncer(JSON.parse(document.getElementById('arg0').value)))">bouncer</button>
-					<button class="ui orange button" data-tooltip="Enter text in arg0 and the ending in arg1" data-position="left center" onclick="document.getElementById('output').innerText = confirmEnding(document.getElementById('arg0').value, document.getElementById('arg1').value)">confirmEnding</button>
-					<button class="ui orange button" data-tooltip="Enter text in arg0 and the ending in arg1" data-position="left center" onclick="document.getElementById('output').innerText = confirmEndingIgnoreCase(document.getElementById('arg0').value, document.getElementById('arg1').value)">confirmEndingIgnoreCase</button>
+					
 				</div>
 			</div>
 		</div>
