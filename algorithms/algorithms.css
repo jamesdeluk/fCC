@@ -8,5 +8,18 @@ body {
 }
 
 .button {
-	margin: 5px !important;
+	/*margin: 5px;*/
+	width: 100%;
+}
+
+.string-inputs .button {
+	background: orange;
+}
+
+.number-inputs .button {
+	background: lightblue;
+}
+
+.array-inputs .button {
+	background: grey;
 }

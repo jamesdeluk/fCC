@@ -9,7 +9,7 @@ OK, Repeat a string repeat a string,	https://www.freecodecamp.org/challenges/rep
 OK, Truncate a string,	https://www.freecodecamp.org/challenges/truncate-a-string
 OK + undefs, Chunky Monkey,	https://www.freecodecamp.org/challenges/chunky-monkey
 OK, Slasher Flick,	https://www.freecodecamp.org/challenges/slasher-flick
-OK (arr & 2str), Mutations,	https://www.freecodecamp.org/challenges/mutations
+OK (arr & 2str NO), Mutations,	https://www.freecodecamp.org/challenges/mutations
 OK, Falsy Bouncer,	https://www.freecodecamp.org/challenges/falsy-bouncer
 OK (arr of arrs, 2arr), Seek and Destroy,	https://www.freecodecamp.org/challenges/seek-and-destroy
 OK , Where do I belong,	https://www.freecodecamp.org/challenges/where-do-i-belong
@@ -24,15 +24,15 @@ OK, Pig Latin,	https://www.freecodecamp.org/challenges/pig-latin
 OK, DNA Pairing,	https://www.freecodecamp.org/challenges/dna-pairing
 OK, Missing letters,	https://www.freecodecamp.org/challenges/missing-letters
 OK, Boo who,	https://www.freecodecamp.org/challenges/boo-who
-Sorted Union,	https://www.freecodecamp.org/challenges/sorted-union
+OK, Sorted Union,	https://www.freecodecamp.org/challenges/sorted-union
 OK, Convert HTML Entities,	https://www.freecodecamp.org/challenges/convert-html-entities
-Spinal Tap Case,	https://www.freecodecamp.org/challenges/spinal-tap-case
-Sum All Odd Fibonacci Numbers,	https://www.freecodecamp.org/challenges/sum-all-odd-fibonacci-numbers
-Sum All Primes,	https://www.freecodecamp.org/challenges/sum-all-primes
-Smallest Common Multiple,	https://www.freecodecamp.org/challenges/smallest-common-multiple
-Finders Keepers,	https://www.freecodecamp.org/challenges/finders-keepers
+OK, Spinal Tap Case,	https://www.freecodecamp.org/challenges/spinal-tap-case
+OK, Sum All Odd Fibonacci Numbers,	https://www.freecodecamp.org/challenges/sum-all-odd-fibonacci-numbers
+OK, Sum All Primes,	https://www.freecodecamp.org/challenges/sum-all-primes
+OK, Smallest Common Multiple,	https://www.freecodecamp.org/challenges/smallest-common-multiple
+OK, Finders Keepers,	https://www.freecodecamp.org/challenges/finders-keepers
 OK, Drop it,	https://www.freecodecamp.org/challenges/drop-it
-Steamroller,	https://www.freecodecamp.org/challenges/steamroller
+OK, Steamroller,	https://www.freecodecamp.org/challenges/steamroller
 OK, Binary Agents,	https://www.freecodecamp.org/challenges/binary-agents
 OK, verything Be True,	https://www.freecodecamp.org/challenges/everything-be-true
 OK, Arguments Optional,	https://www.freecodecamp.org/challenges/arguments-optional

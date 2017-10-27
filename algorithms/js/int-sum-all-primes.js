@@ -1,37 +1,28 @@
 function sumPrimes(num) {
   var primesSum = 0;
-  var arr = []
+  var arr = [];
   for (var i = 1; i <= num; i++) {
-    arr.push(isPrime(i)); //arr[0] is number 1
-  }
-  for (var j = 0; j < arr.length; j++) {
-    if (arr[j] === true) {
-      primesSum += j+1;
-    }
+    primesSum += isPrime(i);
   }
   return primesSum;
 }
 
 function isPrime(test) {
   if (test === 0 || test === 1) {
-    return false;
+    return 0;
   }
-  var arr = [];
-  for (var p = 2; p < test; p++) {
-    arr.push(test%p);
+  if (test !== 2) {
+    if (test % 2 === 0) {
+      return 0;
+    }
   }
-  if (arr.indexOf(0) === -1) {
-      return true;
-  } else {
-    return false;
+  for (var p = 3; p < test; p+=2) {
+    if (test % p === 0) {
+      return 0;
+    }
   }
+  return test;
 }
 
-//isPrime(1);
-
-/*
-if sum of remainder of num x all those below it is 0 the it's prime
-*/
-
-//sumPrimes(10) //should return 17.
-sumPrimes(977) //should return 73156.
+// sumPrimes(10) //should return 17.
+// sumPrimes(977)  //should return 73156.
