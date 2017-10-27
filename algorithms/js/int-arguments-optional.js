@@ -16,22 +16,10 @@ function addTogether() {
         return undefined;
       }
       return args[0] + b;
-    }
+    };
   }
 }
 
 //addTogether(2, 3) //should return 5.
-addTogether(2)(3) //should return 5.
+// addTogether(2)(3); //should return 5.
 //addTogether("http://bit.ly/IqT6zt") //should return undefined.
-//addTogether(2, "3") //should return undefined.
-//addTogether(2)([3]) //should return undefined.
-
-/*
-
-https://developer.mozilla.org/en-US/docs/Web/JavaScript/Closures
-https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/arguments
-
-  if (typeof args[0] !== 'number' || typeof args[1] !=='number') {
-
-
-*/

@@ -23,19 +23,19 @@ OK, Search and Replace,	https://www.freecodecamp.org/challenges/search-and-repla
 OK, Pig Latin,	https://www.freecodecamp.org/challenges/pig-latin
 OK, DNA Pairing,	https://www.freecodecamp.org/challenges/dna-pairing
 OK, Missing letters,	https://www.freecodecamp.org/challenges/missing-letters
-Boo who,	https://www.freecodecamp.org/challenges/boo-who
+OK, Boo who,	https://www.freecodecamp.org/challenges/boo-who
 Sorted Union,	https://www.freecodecamp.org/challenges/sorted-union
-Convert HTML Entities,	https://www.freecodecamp.org/challenges/convert-html-entities
+OK, Convert HTML Entities,	https://www.freecodecamp.org/challenges/convert-html-entities
 Spinal Tap Case,	https://www.freecodecamp.org/challenges/spinal-tap-case
 Sum All Odd Fibonacci Numbers,	https://www.freecodecamp.org/challenges/sum-all-odd-fibonacci-numbers
 Sum All Primes,	https://www.freecodecamp.org/challenges/sum-all-primes
 Smallest Common Multiple,	https://www.freecodecamp.org/challenges/smallest-common-multiple
 Finders Keepers,	https://www.freecodecamp.org/challenges/finders-keepers
-Drop it,	https://www.freecodecamp.org/challenges/drop-it
+OK, Drop it,	https://www.freecodecamp.org/challenges/drop-it
 Steamroller,	https://www.freecodecamp.org/challenges/steamroller
-Binary Agents,	https://www.freecodecamp.org/challenges/binary-agents
-Everything Be True,	https://www.freecodecamp.org/challenges/everything-be-true
-Arguments Optional,	https://www.freecodecamp.org/challenges/arguments-optional
+OK, Binary Agents,	https://www.freecodecamp.org/challenges/binary-agents
+OK, verything Be True,	https://www.freecodecamp.org/challenges/everything-be-true
+OK, Arguments Optional,	https://www.freecodecamp.org/challenges/arguments-optional
 
 Validate US Telephone Numbers,	https://www.freecodecamp.org/challenges/validate-us-telephone-numbers
 Record Collection,	https://www.freecodecamp.org/challenges/record-collection

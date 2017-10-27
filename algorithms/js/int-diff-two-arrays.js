@@ -1,3 +1,5 @@
+/* jshint esversion: 6 */
+
 function diffArray(arr1, arr2) {
 
   var arr1f = arr1.filter(el => !arr2.includes(el));

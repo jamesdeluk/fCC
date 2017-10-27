@@ -1,12 +1,11 @@
 function booWho(bool) {
-  var primitives = [true, false]
-  if (bool === true || bool === false) {
+  if (bool || !bool) {
     return true;
   }
   return false;
 }
 
-booWho(null);
+// booWho(null);
 //booWho(true) //should return true.
 //booWho(false) //should return true.
 //booWho([1, 2, 3]) //should return false.
