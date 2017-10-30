@@ -1,3 +1,32 @@
+============
+WIKI VIEWER
+============
+10 on single line
+Remove blue border
+Enter to submit
+Clear input button
+
+
+============
+RQM
+============
+Why aren't quotes working?
+Margins/padding
+Automatically make quote
+
+
+============
+WEATHER
+============
+Add Google Map
+Main image
+Refresh button
+
+
+============
+ALGORITHMS 
+============
+
 OK, Reverse a String,	https://www.freecodecamp.org/challenges/reverse-a-string
 OK, Factorialize a Number,	https://www.freecodecamp.org/challenges/factorialize-a-number
 OK, Check for Palindromes,	https://www.freecodecamp.org/challenges/check-for-palindromes
