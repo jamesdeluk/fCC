@@ -1,3 +1,18 @@
+body {
+	background-color: ivory;
+	box-sizing: border-box;
+	display: block;
+}
+
+.jg-container {
+	background-color: rgba(255,255,255,0.5);
+	padding-top: 20vh;
+	padding-bottom: 10vh;
+	width: 50vw;
+	margin: 0 auto;
+	text-align: center;
+}
+
 #info {
 	font-size: 2em;
 }
@@ -10,7 +25,6 @@
 	background-color: skyblue;
 }
 
-.jg-container {
-	background-color: rgba(255,255,255,0.5);
-	padding-top: 40vh;
+.hidden {
+	display: none;
 }

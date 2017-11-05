@@ -18,13 +18,15 @@ function getWeather() {
     var description = weatherData.weather[0].description;
     var image = weatherData.weather[0].icon;
     var temp = weatherData.main.temp;
+    $("#main").text(main);
+    $("#description").text(description);
     if (toggle == 1) {
       temp = 1.8 * temp + 32;
-      $("#info").html(main + " (" + description + ") " + temp + "&deg;F");
-      $("#toggle").html("Show me in Celcius");
+      $("#temperature").html(temp + "&deg;F");
+      $("#toggle").text("Show me in Celcius");
     } else {
-      $("#info").html(main + " (" + description + ") " + temp + "&deg;C");
-      $("#toggle").html("Show me in Fahrenheit");
+      $("#temperature").html(temp + "&deg;C");
+      $("#toggle").text("Show me in Fahrenheit");
     }
     // $("#image").replaceWith("<p id=\"image\"><img src=" + image + "/></p>");
     if (main === "Clear") {
@@ -32,6 +34,7 @@ function getWeather() {
       $("#image").html("<i class='fa fa-sun-o' aria-hidden='true'></i>");
       $("#image").css("color", "yellow");
     }
+    $("#toggle").show();
   });
 };
 

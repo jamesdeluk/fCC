@@ -1,18 +1,9 @@
 ============
-WIKI VIEWER
-============
-10 on single line
-Remove blue border
-Enter to submit
-Clear input button
-
-
-============
 RQM
 ============
-Why aren't quotes working?
+Why aren't quotes working? >> API BROKEN!
 Margins/padding
-Automatically make quote
+Automatically get quote
 
 
 ============

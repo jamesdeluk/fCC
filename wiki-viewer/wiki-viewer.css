@@ -10,3 +10,7 @@ body {
 .jumbotron {
 	background: #e2faff;
 }
+
+*:focus {
+	box-shadow: none !important;
+}
