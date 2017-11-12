@@ -8,7 +8,22 @@ if (navigator.geolocation) {
     lon = position.coords.longitude;
     $("#lat").html("latitude: " + lat);
     $("#lon").html("longitude: " + lon);
+    initMap();
     getWeather();
+  });
+}
+
+function initMap() {
+  var uluru = {lat: -25.363, lng: 131.044};
+  uluru.lat = lat;
+  uluru.lon = lon;
+  var map = new google.maps.Map(document.getElementById('map'), {
+    zoom: 4,
+    center: uluru
+  });
+  var marker = new google.maps.Marker({
+    position: uluru,
+    map: map
   });
 }
 

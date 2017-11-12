@@ -1,20 +1,4 @@
 ============
-RQM
-============
-Why aren't quotes working? >> API BROKEN!
-Margins/padding
-Automatically get quote
-
-
-============
-WEATHER
-============
-Add Google Map
-Main image
-Refresh button
-
-
-============
 ALGORITHMS 
 ============
 
@@ -57,8 +41,8 @@ OK, Binary Agents,	https://www.freecodecamp.org/challenges/binary-agents
 OK, verything Be True,	https://www.freecodecamp.org/challenges/everything-be-true
 OK, Arguments Optional,	https://www.freecodecamp.org/challenges/arguments-optional
 
-Validate US Telephone Numbers,	https://www.freecodecamp.org/challenges/validate-us-telephone-numbers
-Record Collection,	https://www.freecodecamp.org/challenges/record-collection
+OK, Validate US Telephone Numbers,	https://www.freecodecamp.org/challenges/validate-us-telephone-numbers
+OK, Record Collection,	https://www.freecodecamp.org/challenges/record-collection
 Symmetric Difference,	https://www.freecodecamp.org/challenges/symmetric-difference
 Exact Change,	https://www.freecodecamp.org/challenges/exact-change
 Inventory Update,	https://www.freecodecamp.org/challenges/inventory-update
@@ -66,3 +50,18 @@ No repeats please,	https://www.freecodecamp.org/challenges/no-repeats-please
 Make a Person,	https://www.freecodecamp.org/challenges/make-a-person
 Map the Debris,	https://www.freecodecamp.org/challenges/map-the-debris
 Pairwise,	https://www.freecodecamp.org/challenges/pairwise
+
+============
+RQM
+============
+Why aren't quotes working? >> API BROKEN!
+https://quotesondesign.com/api-v4-0/
+https://forismatic.com/en/api/
+Margins/padding
+Automatically get quote
+
+============
+WEATHER
+============
+Refresh button
+Different locations
