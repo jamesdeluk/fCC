@@ -1,58 +1,48 @@
 function sym(args) {
 
-	let input = Array.from(arguments);
-	console.log(input);
+  let input;
 
-	let merged = input[0].concat(input[1]).sort();
-	console.log(merged)
+  if (!Array.isArray(arguments)) {
+    input = Array.from(arguments);
+  }
 
-	let reduced = merged;
+  function symDif(input1, input2) {
+    let uniques = [];
+    for (let j = 0; j < input1.length; j++) {
+      if(!input2.includes(input1[j])) {
+        uniques.push(input1[j]);
+      }
+    };
+    for (let j = 0; j < input2.length; j++) {
+      if(!input1.includes(input2[j])) {
+        uniques.push(input2[j]);
+      }
+    };
+    uniques.sort();
+    let i = 0;
+    while (i < uniques.length-1) {
+      if (uniques[i] === uniques[i+1]) {
+        uniques.splice(i,1);
+        i--;
+      }
+      i++;
+    }
+    return uniques;
+  }
 
-	let i = 1;
-	while (i < merged.length) {
-		// console.log(merged[i] + ", " + merged[i-1])
-		if(merged[i] === merged[i-1]) {
-			reduced.splice([i-1],2);
-			i--;
-		}
-		i++;
-	}
-
-	console.log(reduced);
-
-	// if (input.length > 2) {
-	// 	input.shift();
-	// 	input.shift();
-
-	// 	let newInput = [];
-
-	// console.log(input);
-
-	// newInput.push(merged);
-	// newInput.push(input);
-
-	// console.log(newInput);
-
-	// sym(newInput);
-	// }
-
-	// 1. merge first two arrays and sort
-	// 2. remove if multiple
-	// 3. syn dif new arr against args 0+2 -> recall function>
-
-  // return args;
+  return input.reduce(symDif);
 }
 
 //sym([1, 2, 3], [5, 2, 1, 4]) //should return [3, 4, 5].
 // sym([1, 2, 3], [5, 2, 1, 4]) //should contain only three elements.
-sym([1, 2, 5], [2, 3, 5], [3, 4, 5]) //should return [1, 4, 5]
+// sym([1, 2, 5], [2, 3, 5], [3, 4, 5]) //should return [1, 4, 5]
 // sym([1, 2, 5], [2, 3, 5], [3, 4, 5]) should contain only three elements.
 // sym([1, 1, 2, 5], [2, 2, 3, 5], [3, 4, 5, 5]) should return [1, 4, 5].
 // sym([1, 1, 2, 5], [2, 2, 3, 5], [3, 4, 5, 5]) should contain only three elements.
 // sym([3, 3, 3, 2, 5], [2, 1, 5, 7], [3, 4, 6, 6], [1, 2, 3]) should return [2, 3, 4, 6, 7].
 // sym([3, 3, 3, 2, 5], [2, 1, 5, 7], [3, 4, 6, 6], [1, 2, 3]) should contain only five elements.
-// sym([3, 3, 3, 2, 5], [2, 1, 5, 7], [3, 4, 6, 6], [1, 2, 3], [5, 3, 9, 8], [1]) should return [1, 2, 4, 5, 6, 7, 8, 9].
-// sym([3, 3, 3, 2, 5], [2, 1, 5, 7], [3, 4, 6, 6], [1, 2, 3], [5, 3, 9, 8], [1]) should contain only eight elements.
+sym([3, 3, 3, 2, 5], [2, 1, 5, 7], [3, 4, 6, 6], [1, 2, 3], [5, 3, 9, 8], [1]) //should return [1, 2, 4, 5, 6, 7, 8, 9].
+// sym([3, 3, 3, 2, 5], [2, 1, 5, 7], [3, 4, 6, 6], [1, 2, 3], [5, 3, 9, 8], [1]) //should contain only eight elements.
 
 
 /*
