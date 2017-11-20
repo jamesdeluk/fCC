@@ -1,24 +1,36 @@
 function checkCashRegister(price, cash, cid) {
+  var cash = cash.toFixed(2);
+  console.log("cash = " + cash);
+  var price = price.toFixed(2);
+  console.log("price = " + price);
   var change = cash - price;
+  change = change.toFixed(2);
+  console.log("change = " + change);
+
   var totalcid = 0;
   for (var i = 0; i < cid.length; i++) {
     totalcid += cid[i][1];
   }
+  totalcid = totalcid.toFixed(2);
   console.log("totalcid = " + totalcid);
-  console.log("change = " + change);
-  if (change > totalcid) {
-    return "Insufficient Funds";
-  }
+  console.log(cid);
+
+  // if (change > totalcid) {
+  //   return "Insufficient Funds";
+  // }
+
   if (change === totalcid) {
+    console.log("Closed");
     return "Closed";
   }
-  change = change.toFixed(2);
-  totalcid = totalcid.toFixed(2);
-  var hund = 0; var twen = 0; var ten = 0; var five = 0; var one = 0; var quar = 0; var dime = 0; var nick = 0; var pen = 0;
+
+  var hund, twen, ten, five, one, quar, dime, nick, pen;
+  hund = twen = ten = five = one = quar = dime = nick = pen = 0;
   
     while (change >= 100) {
       if (cid[8][1] >= 100) {
         hund++;
+        changeArr[0] += 1;
         change -= 100;
         cid[8][1] -= 100;
       } else {
@@ -101,13 +113,23 @@ function checkCashRegister(price, cash, cid) {
       pen++;
     }
   
-  //if (change > 0.01) { // should be 0
-  //  return "Insufficient Funds";
-  //}
-  
-  console.log("h" + hund + " t" + twen + " t" + ten + " f" + five + " o" + one + " q" + quar + " d" + dime + " n" + nick + " p" + pen);
-  
-  hund *= 100; hund = hund.toFixed(2);
+  let changeArr = [hund, twen, ten, five, one, quar, dime, nick, pen];
+  console.log(changeArr);
+  let valArr = [100, 20, 10, 5, 1, 0.25, 0.10, 0.05, 0.01];
+  console.log(valArr);
+  let cashArr = [];
+  for (let i = 0; i < changeArr.length; i++) {
+    cashArr[i] = changeArr[i] * valArr[i];
+  }
+  console.log(cashArr);
+
+  if (change > 0.01) { // should be 0
+   console.log("Insufficient Funds");
+   return "Insufficient Funds";
+  }
+
+  hund *= 100;
+  hund = hund.toFixed(2);
   twen *= 20; twen = twen.toFixed(2);
   ten *= 10; ten = ten.toFixed(2);
   five *= 5; five = five.toFixed(2);
@@ -117,25 +139,26 @@ function checkCashRegister(price, cash, cid) {
   nick *= 0.05; nick = nick.toFixed(2);
   pen *= 0.01; pen = pen.toFixed(2);
   
-  var result = [["ONE HUNDRED", hund], ["TWENTY", twen], ["TEN", ten], ["FIVE", five], ["ONE", one], ["QUARTER", quar], ["DIME", dime], ["NICKEL", nick], ["PENNY", pen]];
+  // console.log("change = hundreds " + hund + " twenties" + twen + " tens" + ten + " fives" + five + " ones" + one + " quarters" + quar + " dimes" + dime + " nickels" + nick + " pennies" + pen);
   
+  // var result = [["ONE HUNDRED", hund], ["TWENTY", twen], ["TEN", ten], ["FIVE", five], ["ONE", one], ["QUARTER", quar], ["DIME", dime], ["NICKEL", nick], ["PENNY", pen]];
+   var result = [["ONE HUNDRED", cashArr[0]], ["TWENTY", cashArr[1]], ["TEN", cashArr[2]], ["FIVE", cashArr[3]], ["ONE", cashArr[4]], ["QUARTER", cashArr[5]], ["DIME", cashArr[6]], ["NICKEL", cashArr[7]], ["PENNY", cashArr[8]]];
+
   for (var j = 0; j < result.length; j++) {
-    if (result[j][1] == 0) {
+    if (result[j][1] === 0.00) {
       result.splice(j,1);
     }
   }
   
+  console.log(result);
   return result;
 }
 
-//checkCashRegister(19.50, 20.00, [["PENNY", 1.01], ["NICKEL", 2.05], ["DIME", 3.10], ["QUARTER", 4.25], ["ONE", 90.00], ["FIVE", 55.00], ["TEN", 20.00], ["TWENTY", 60.00], ["ONE HUNDRED", 100.00]]) //should return an array.
-//checkCashRegister(19.50, 20.00, [["PENNY", 0.01], ["NICKEL", 0], ["DIME", 0], ["QUARTER", 0], ["ONE", 0], ["FIVE", 0], ["TEN", 0], ["TWENTY", 0], ["ONE HUNDRED", 0]]) //should return a string.
-//checkCashRegister(19.50, 20.00, [["PENNY", 0.50], ["NICKEL", 0], ["DIME", 0], ["QUARTER", 0], ["ONE", 0], ["FIVE", 0], ["TEN", 0], ["TWENTY", 0], ["ONE HUNDRED", 0]]) //should return a string.
-//checkCashRegister(19.50, 20.00, [["PENNY", 1.01], ["NICKEL", 2.05], ["DIME", 3.10], ["QUARTER", 4.25], ["ONE", 90.00], ["FIVE", 55.00], ["TEN", 20.00], ["TWENTY", 60.00], ["ONE HUNDRED", 100.00]]) //should return [["QUARTER", 0.50]].
-//checkCashRegister(3.26, 100.00, [["PENNY", 1.01], ["NICKEL", 2.05], ["DIME", 3.10], ["QUARTER", 4.25], ["ONE", 90.00], ["FIVE", 55.00], ["TEN", 20.00], ["TWENTY", 60.00], ["ONE HUNDRED", 100.00]]) //should return [["TWENTY", 60.00], ["TEN", 20.00], ["FIVE", 15.00], ["ONE", 1.00], ["QUARTER", 0.50], ["DIME", 0.20], ["PENNY", 0.04]].
-//checkCashRegister(19.50, 20.00, [["PENNY", 0.01], ["NICKEL", 0], ["DIME", 0], ["QUARTER", 0], ["ONE", 0], ["FIVE", 0], ["TEN", 0], ["TWENTY", 0], ["ONE HUNDRED", 0]]) //should return "Insufficient Funds".
+checkCashRegister(19.50, 20.00, [["PENNY", 1.01], ["NICKEL", 2.05], ["DIME", 3.10], ["QUARTER", 4.25], ["ONE", 90.00], ["FIVE", 55.00], ["TEN", 20.00], ["TWENTY", 60.00], ["ONE HUNDRED", 100.00]]) //should return [["QUARTER", 0.50]].
+checkCashRegister(3.26, 100.00, [["PENNY", 1.01], ["NICKEL", 2.05], ["DIME", 3.10], ["QUARTER", 4.25], ["ONE", 90.00], ["FIVE", 55.00], ["TEN", 20.00], ["TWENTY", 60.00], ["ONE HUNDRED", 100.00]]) //should return [["TWENTY", 60.00], ["TEN", 20.00], ["FIVE", 15.00], ["ONE", 1.00], ["QUARTER", 0.50], ["DIME", 0.20], ["PENNY", 0.04]].
+checkCashRegister(19.50, 20.00, [["PENNY", 0.01], ["NICKEL", 0], ["DIME", 0], ["QUARTER", 0], ["ONE", 0], ["FIVE", 0], ["TEN", 0], ["TWENTY", 0], ["ONE HUNDRED", 0]]) //should return "Insufficient Funds".
 checkCashRegister(19.50, 20.00, [["PENNY", 0.01], ["NICKEL", 0], ["DIME", 0], ["QUARTER", 0], ["ONE", 1.00], ["FIVE", 0], ["TEN", 0], ["TWENTY", 0], ["ONE HUNDRED", 0]]) //should return "Insufficient Funds"
-//checkCashRegister(19.50, 20.00, [["PENNY", 0.50], ["NICKEL", 0], ["DIME", 0], ["QUARTER", 0], ["ONE", 0], ["FIVE", 0], ["TEN", 0], ["TWENTY", 0], ["ONE HUNDRED", 0]]) //should return "Closed".
+checkCashRegister(19.50, 20.00, [["PENNY", 0.50], ["NICKEL", 0], ["DIME", 0], ["QUARTER", 0], ["ONE", 0], ["FIVE", 0], ["TEN", 0], ["TWENTY", 0], ["ONE HUNDRED", 0]]) //should return "Closed".
 
 /*
 

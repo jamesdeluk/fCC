@@ -43,13 +43,13 @@ OK, Arguments Optional,	https://www.freecodecamp.org/challenges/arguments-option
 
 OK, Validate US Telephone Numbers,	https://www.freecodecamp.org/challenges/validate-us-telephone-numbers
 OK, Record Collection,	https://www.freecodecamp.org/challenges/record-collection
-Symmetric Difference,	https://www.freecodecamp.org/challenges/symmetric-difference
+OK, Symmetric Difference,	https://www.freecodecamp.org/challenges/symmetric-difference
 Exact Change,	https://www.freecodecamp.org/challenges/exact-change
 Inventory Update,	https://www.freecodecamp.org/challenges/inventory-update
-No repeats please,	https://www.freecodecamp.org/challenges/no-repeats-please
-Make a Person,	https://www.freecodecamp.org/challenges/make-a-person
-Map the Debris,	https://www.freecodecamp.org/challenges/map-the-debris
-Pairwise,	https://www.freecodecamp.org/challenges/pairwise
+OK, No repeats please,	https://www.freecodecamp.org/challenges/no-repeats-please
+OK, Make a Person,	https://www.freecodecamp.org/challenges/make-a-person
+OK, Map the Debris,	https://www.freecodecamp.org/challenges/map-the-debris
+OK, Pairwise,	https://www.freecodecamp.org/challenges/pairwise
 
 ============
 RQM
