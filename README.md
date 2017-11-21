@@ -44,8 +44,8 @@ OK, Arguments Optional,	https://www.freecodecamp.org/challenges/arguments-option
 OK, Validate US Telephone Numbers,	https://www.freecodecamp.org/challenges/validate-us-telephone-numbers
 OK, Record Collection,	https://www.freecodecamp.org/challenges/record-collection
 OK, Symmetric Difference,	https://www.freecodecamp.org/challenges/symmetric-difference
-Exact Change,	https://www.freecodecamp.org/challenges/exact-change
-Inventory Update,	https://www.freecodecamp.org/challenges/inventory-update
+OK (but bad), Exact Change,	https://www.freecodecamp.org/challenges/exact-change
+OK, Inventory Update,	https://www.freecodecamp.org/challenges/inventory-update
 OK, No repeats please,	https://www.freecodecamp.org/challenges/no-repeats-please
 OK, Make a Person,	https://www.freecodecamp.org/challenges/make-a-person
 OK, Map the Debris,	https://www.freecodecamp.org/challenges/map-the-debris
